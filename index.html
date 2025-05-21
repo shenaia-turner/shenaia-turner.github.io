@@ -5,17 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shenaia Turner's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Shenaia Turner's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a short bio here.</p>
+
+    <section id="projects">
+        <div class="project" id="project1">
+            <h2>Project 1 Title</h2>
+            <p>Description of project 1. This could include some context, goals, and process involved.</p>
+            
+            <!-- Slideshow -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/project1-image1.jpg" alt="Project 1 Image 1"></div>
+                    <div class="swiper-slide"><img src="assets/project1-image2.jpg" alt="Project 1 Image 2"></div>
+                    <div class="swiper-slide"><img src="assets/project1-image3.jpg" alt="Project 1 Image 3"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- Add more projects here following the same structure -->
     </section>
+
     <footer>
         <p>&copy; 2025 Shenaia Turner</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper for slideshow
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000, // 5 seconds
+            }
+        });
+    </script>
 </body>
 </html>
