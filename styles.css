@@ -67,6 +67,11 @@ header nav ul li a {
     object-fit: cover;
 }
 
+/* Hide Default Swiper Navigation Arrows */
+.swiper-button-prev, .swiper-button-next {
+    display: none;  /* Hides default arrows */
+}
+
 /* Custom Swiper Navigation Arrows */
 .swiper-button-prev, .swiper-button-next {
     position: absolute;
@@ -100,11 +105,11 @@ header nav ul li a {
 
 /* Custom pixelated arrows (Unicode characters) */
 .swiper-button-prev::before {
-    content: '\2190'; /* Left arrow */
+    content: '\2190'; /* Left arrow (Unicode) */
 }
 
 .swiper-button-next::before {
-    content: '\2192'; /* Right arrow */
+    content: '\2192'; /* Right arrow (Unicode) */
 }
 
 /* Optional: Add hover effect to make arrows more interactive */
