@@ -30,6 +30,9 @@
                     <div class="swiper-slide"><img src="assets/project1/project1-image3.gif" alt="Project 1 Image 3"></div>
                 </div>
                 <div class="swiper-pagination"></div>
+                <!-- Custom Navigation Arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
 
@@ -45,12 +48,15 @@
                     <div class="swiper-slide"><img src="assets/project2/project2-image3.png" alt="Project 2 Image 3"></div>
                 </div>
                 <div class="swiper-pagination"></div>
+                <!-- Custom Navigation Arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
 
         <div class="project" id="project3">
             <h2>AIRFORMATICS</h2>
-            <p>This project is a collaborative research undertaken during a one-semester, 16 week studio at the University of Pennsylvania as part of the Master of Science and Design in Robotics and Autonomous Systems program. We asked the question: Could the inflation of thermoplastic preforms be a suitable manufacturing method to create thin-walled high-volume architectural components? To address this, an automated manufacturing approach aimed at enhancing scale and inflation formation for the Fused Granular Fabrication (FGF) based production is used in combination of an inflation simulation scenario and a custom end-of-arm tool for inflation.</p>
+            <p>This project is a collaborative research undertaken during a one-semester, 16-week studio at the University of Pennsylvania as part of the Master of Science and Design in Robotics and Autonomous Systems program. We asked the question: Could the inflation of thermoplastic preforms be a suitable manufacturing method to create thin-walled high-volume architectural components? To address this, an automated manufacturing approach aimed at enhancing scale and inflation formation for the Fused Granular Fabrication (FGF) based production is used in combination with an inflation simulation scenario and a custom end-of-arm tool for inflation.</p>
             
             <!-- Slideshow -->
             <div class="swiper-container">
@@ -60,12 +66,15 @@
                     <div class="swiper-slide"><img src="assets/project3/project3-image3.gif" alt="Project 3 Image 3"></div>
                 </div>
                 <div class="swiper-pagination"></div>
+                <!-- Custom Navigation Arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
 
         <div class="project" id="project4">
             <h2>OFF / FROM THE WALL</h2>
-            <p>Using both PolyCam and RealityScan we captured an areas point cloud using a series of stiched together images. We focused on the Corbel and it's ornamental pattern, materiality, and primordial shape as well as it's out-of-placeness. Using photogrammetry we were able to retrieve a 3D model of the site, extract the Corbel, and generate a form. To get our final geometry we first ran an aggregation script from grasshopper with python and generated it with a solid rectangle. Then, between some of the generated corbels we lofted to create connection between them which generated into the foam pieces. We used google colab to convert our image into canny edge representations and added it to our mass as a tattoo.</p>
+            <p>Using both PolyCam and RealityScan, we captured an area’s point cloud using a series of stitched together images. We focused on the Corbel and its ornamental pattern, materiality, and primordial shape, as well as its out-of-placeness. Using photogrammetry, we were able to retrieve a 3D model of the site, extract the Corbel, and generate a form. To get our final geometry, we first ran an aggregation script from Grasshopper with Python and generated it with a solid rectangle. Then, between some of the generated corbels, we lofted to create connections between them, generating the foam pieces. We used Google Colab to convert our image into canny edge representations and added it to our mass as a tattoo.</p>
             
             <!-- Slideshow -->
             <div class="swiper-container">
@@ -75,6 +84,9 @@
                     <div class="swiper-slide"><img src="assets/project4/project4-image3.jpg" alt="Project 4 Image 3"></div>
                 </div>
                 <div class="swiper-pagination"></div>
+                <!-- Custom Navigation Arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -85,16 +97,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script>
-        // Initialize Swiper for slideshow with keyboard control
+        // Initialize Swiper for slideshow with custom navigation arrows
         var swiper = new Swiper('.swiper-container', {
             loop: true,  // Loop the slides
             pagination: {
                 el: '.swiper-pagination', // Pagination (optional)
                 clickable: true,
             },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
             keyboard: {
-                enabled: true,  // Enable arrow key navigation
-                onlyInViewport: false, // Allow navigation when the swiper is not in the viewport
+                enabled: false,  // Disable keyboard navigation (arrow keys)
             },
         });
     </script>
